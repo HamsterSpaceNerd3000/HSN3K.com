@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Downlink | Native Spaceflight Video Environment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/dwnlnk_styles.css">
+</head>
+
+<script>
+  function openBetaModal() {
+    const modal = document.getElementById('beta-modal');
+    modal.style.display = 'flex';
+  }
+
+  function closeBetaModal(event, forceClose = false) {
+    const modal = document.getElementById('beta-modal');
+    // Close if close button/acknowledge clicked or clicked outside content
+    if (forceClose || event.target === modal) {
+      modal.style.display = 'none';
+    }
+  }
+</script>
+
+<body>
+  <div class="container">
+    <a href="index.html" class="nav-back">&larr; Back to HSN3K Overview</a>
+
+    <header>
+      <div class="status-badge">
+        <span class="status-dot"></span> LATEST RELEASE: v0.4.0 CLOSED ALPHA
+      </div>
+      <h1>Downlink</h1>
+      <p class="subtitle">Multi-feed desktop streaming environment engineered to monitor live spaceflight streams, launch telemetry, and event feeds in a low-latency native application.</p>
+
+      <div class="hero-download">
+        <!-- Changed to a button with an onclick handler -->
+        <button class="btn" onclick="openBetaModal()">
+          Downlink is in Closed Alpha, therefore there is no public download. &darr;
+        </button>
+        <span class="download-meta">Version 0.4.0 CLOSED ALPHA • Executable Installer / Portable Zip • Windows 10/11</span>
+      </div>
+
+      <!-- Closed Beta Modal Window -->
+      <div id="beta-modal" class="modal-overlay" onclick="closeBetaModal(event)">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="modal-title">[!] NOTICE: CLOSED ALPHA</span>
+            <button class="modal-close" onclick="closeBetaModal(event, true)">&times;</button>
+          </div>
+          <p class="modal-body">
+            Downlink downloads are currently restricted. The application is operating in a closed testing phase and public builds are not yet available for direct download.
+          </p>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" onclick="closeBetaModal(event, true)">Acknowledge</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="project-stack">
+      <section class="project-section">
+        <div class="project-content">
+        <div class="project-header">
+            <h2 class="project-title">Key Capabilities</h2>
+            <span class="project-type">FEATURES</span>
+        </div>
+        <p class="project-desc">Designed specifically to bypass web browser overhead and manage high-bitrate live feeds during multi-angle launch coverages.</p>
+        
+        <div class="spec-grid">
+            <div class="spec-card">
+            <h3>[01] Multi-Stream & Grid Playback</h3>
+            <p class="project-desc" style="font-size: 0.875rem; margin-bottom: 0;">Play multiple streams simultaneously in resizable windows with automatic grid layout calculations.</p>
+            </div>
+            <div class="spec-card">
+            <h3>[02] Universal Stream Resolution</h3>
+            <p class="project-desc" style="font-size: 0.875rem; margin-bottom: 0;">Dynamic extraction of playable stream URLs, metadata, and thumbnails from raw RTSP/M3U8 streams and website links via yt-dlp.</p>
+            </div>
+            <div class="spec-card">
+            <h3>[03] Native Embedded Media Players</h3>
+            <p class="project-desc" style="font-size: 0.875rem; margin-bottom: 0;">Hardware-accelerated video rendering powered by libVLC alongside embedded WebView surfaces for native grid playback.</p>
+            </div>
+            <div class="spec-card">
+            <h3>[04] Visual Feed & Output Management</h3>
+            <p class="project-desc" style="font-size: 0.875rem; margin-bottom: 0;">Centralized dashboard to store, edit, group, and persist feeds and preset layout configurations in local storage.</p>
+            </div>
+            <div class="spec-card">
+            <h3>[05] Drag-and-Drop Output Builder</h3>
+            <p class="project-desc" style="font-size: 0.875rem; margin-bottom: 0;">Interactive workspace using visual ghost overlays to assign, swap, or reorder feeds across playback output slots.</p>
+            </div>
+            <div class="spec-card">
+            <h3>[06] Auto Connection Recovery</h3>
+            <p class="project-desc" style="font-size: 0.875rem; margin-bottom: 0;">Active playback monitoring with automatic stall and buffer detection and instant reconnection logic for dropped streams.</p>
+            </div>
+            <div class="spec-card">
+            <h3>[07] Async Loading & Progress</h3>
+            <p class="project-desc" style="font-size: 0.875rem; margin-bottom: 0;">Threaded stream extraction coupled with a non-blocking modal progress popup during multi-feed playback initialization.</p>
+            </div>
+            <div class="spec-card">
+            <h3>[08] Diagnostic Debug Logging</h3>
+            <p class="project-desc" style="font-size: 0.875rem; margin-bottom: 0;">Non-blocking, queue-backed debug logging system with custom timestamping enabled via environment variables.</p>
+            </div>
+            <div class="spec-card">
+            <h3>[09] Discord Credit Linking</h3>
+            <p class="project-desc" style="font-size: 0.875rem; margin-bottom: 0;">Link copying system that uses feed title and is formatted for easy use in a Discord environment.</p>
+            </div>
+            <div class="spec-card">
+            <h3>[10] WebP/GIF Extraction</h3>
+            <p class="project-desc" style="font-size: 0.875rem; margin-bottom: 0;">Extract a WebP, or a GIF, of the previous set of time (length of time can be customized) for any feed. Extracts to a set folder.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+      <section class="project-section">
+        <div class="project-content">
+          <div class="project-header">
+            <h2 class="project-title">System Requirements</h2>
+            <span class="project-type">SPECIFICATIONS</span>
+          </div>
+
+          <div class="spec-grid">
+            <div class="spec-card">
+              <h3>Windows Requirements</h3>
+              <ul class="spec-list">
+                <li><span class="spec-label">OS</span> <span>Windows 10 / 11 (64-bit)</span></li>
+                <li><span class="spec-label">RAM</span> <span>3 GB Minimum (4 GB Recommended)</span></li>
+                <li><span class="spec-label">Network</span> <span>Broadband Connection</span></li>
+                <li><span class="spec-label">Dependencies</span> <span>VLC Media Player (or bundled codecs)</span></li>
+              </ul>
+            </div>
+
+            <div class="spec-card">
+              <h3>Linux</h3>
+              <ul class="spec-list">
+                <p class="project-desc" style="font-size: 0.875rem; margin-bottom: 0;">Linux builds are currently being worked on, therefore requirements are currently unknown.</p>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-section">
+        <div class="project-content">
+          <div class="project-header">
+            <h2 class="project-title">Developer & Source Build</h2>
+            <span class="project-type">SOURCE</span>
+          </div>
+          <p class="project-desc">If you prefer running Downlink from source on Linux or modifying the UI, you can clone the repository and run it directly in a Python environment.</p>
+          
+          <div class="code-block">
+            # Clone repository<br>
+            git clone https://github.com/HSN3K/downlink.git<br>
+            cd downlink<br><br>
+            # Set up virtual environment and run<br>
+            uv venv && source .venv/bin/activate<br>
+            pip install -r requirements.txt<br>
+            python main.py
+          </div>
+        </div>
+      </section>
+
+      <!-- Credits & Acknowledgments -->
+      <section class="project-section">
+        <div class="project-content">
+          <div class="project-header">
+            <h2 class="project-title">Credits & Acknowledgments</h2>
+            <span class="project-type">CONTRIBUTORS</span>
+          </div>
+          <p class="project-desc">Special thanks to those who contributed technical feedback, testing, and project support throughout development.</p>
+
+          <div class="credits-grid">
+            <!-- Contributor 1 -->
+            <div class="credit-card">
+              <div class="credit-header">
+                <span class="credit-name">BrightBites</span>
+                <span class="credit-role">Linux Work</span>
+              </div>
+              <p class="credit-desc">Everything involving Linux builds and compatibility, she did. Huge thanks!</p>
+            </div>
+
+            <!-- Contributor 2 -->
+            <div class="credit-card">
+              <div class="credit-header">
+                <span class="credit-name">Alpha Testing Group</span>
+                <span class="credit-role">Testing</span>
+              </div>
+              <p class="credit-desc">A group of my friends who agreed to do the early testing!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 • Hosted on hsn3k.com</p>
+    </footer>
+  </div>
+
+</body>
+</html>
