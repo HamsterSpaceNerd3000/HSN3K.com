@@ -1,0 +1,17 @@
+{
+  "releases": [
+    {
+      "version": "RocketLaunchCountdown v0.8.0",
+      "date": "2026-05-07",
+      "release_notes": [
+        "Full rewrite of the entire program, using a new GUI library.",
+        "Replaced HTML files with seperate popouts that are their own exes.",
+        "Fixed many bugs present in pre-0.8.0 (This was done mostly by the rewrite).",
+        "Added auto hold and reset time.",
+        "New logo!",
+        "Much more!"
+      ],
+      "download_path": "/download-assets/RLCInstallerV3.exe"
+    }
+  ]
+}

@@ -3,29 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RocketLaunchCountdown | Stream Helper</title>
+    <title>RLC | Stream Helper</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/dwnlnk_styles.css">
-    <link rel="icon" type="image/x-icon" href="../images/rlc.ico">
+    <link rel="icon" type="image/x-icon" href="../images/RLCLogo.ico">
 </head>
-
-<script>
-  function openBetaModal() {
-    const modal = document.getElementById('beta-modal');
-    modal.style.display = 'flex';
-  }
-
-  function closeBetaModal(event, forceClose = false) {
-    const modal = document.getElementById('beta-modal');
-    // Close if close button/acknowledge clicked or clicked outside content
-    if (forceClose || event.target === modal) {
-      modal.style.display = 'none';
-    }
-  }
-</script>
 
 <body>
   <div class="container">
@@ -33,39 +18,23 @@
 
     <header>
       <div class="status-badge">
-        <span class="status-dot"></span> LATEST RELEASE: v0.4.0 CLOSED ALPHA
+        <span class="status-dot"></span> LATEST RELEASE: v0.8.0 Open Alpha
       </div>
       <div class="project-header">
         <div class="header-brand">
-            <img src="../images/rlc.ico" alt="RocketLaunchCountdown Logo" class="project-logo">
+            <img src="../images/RLCLogo.ico" alt="RocketLaunchCountdown Logo" class="project-logo">
             <h2 class="project-title">RocketLaunchCountdown</h2>
         </div>
         <span class="project-type">FEATURES</span>
       </div>
-      <p class="subtitle">Multi-feed desktop streaming environment engineered to view multiple live streams or videos in a low latency and resource environment.</p>
+      <p class="subtitle">Desktop countdown manager used for live streams. Meant for efficiency and ease of use.</p>
 
       <div class="hero-download">
         <!-- Changed to a button with an onclick handler -->
-        <button class="btn" onclick="openBetaModal()">
-          RocketLaunchCountdown is in Closed Alpha, therefore there is no public download. &darr;
-        </button>
-        <span class="download-meta">Version 0.4.0 CLOSED ALPHA • Executable Installer / Portable Zip • Windows 10/11</span>
-      </div>
-
-      <!-- Closed Beta Modal Window -->
-      <div id="beta-modal" class="modal-overlay" onclick="closeBetaModal(event)">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span class="modal-title">[!] NOTICE: CLOSED ALPHA</span>
-            <button class="modal-close" onclick="closeBetaModal(event, true)">&times;</button>
-          </div>
-          <p class="modal-body">
-            RocketLaunchCountdown downloads are currently restricted. The application is operating in a closed testing phase and public builds are not yet available for direct download.
-          </p>
-          <div class="modal-footer">
-            <button class="btn btn-secondary" onclick="closeBetaModal(event, true)">Acknowledge</button>
-          </div>
-        </div>
+        <a href="download.html" class="btn">
+          Go To The Download Page &darr;
+        </a>
+        <span class="download-meta">Version 0.8.0 OPEN ALPHA • Executable Installer • Windows 10/11</span>
       </div>
     </header>
 
@@ -76,48 +45,32 @@
             <h2 class="project-title">Key Capabilities</h2>
             <span class="project-type">FEATURES</span>
         </div>
-        <p class="project-desc">Designed specifically to bypass web browser overhead and manage high-bitrate live feeds during multi-angle launch coverages.</p>
+        <p class="project-desc">Designed to provide a easy and reliable countdown manager for Rocket Launch Streams</p>
         
         <div class="spec-grid">
             <div class="spec-card">
-            <h3>[01] Multi-Stream & Grid Playback</h3>
-            <p class="project-desc" style="font-size: 0.875rem; margin-bottom: 0;">Play multiple streams simultaneously in resizable windows with automatic grid layout calculations.</p>
+            <h3>[01] Countdown Manager</h3>
+            <p class="project-desc" style="font-size: 0.875rem; margin-bottom: 0;">In-built manager of countdown UI with auto-hold, scrub, and pausing capabilities.</p>
             </div>
             <div class="spec-card">
-            <h3>[02] Universal Stream Resolution</h3>
-            <p class="project-desc" style="font-size: 0.875rem; margin-bottom: 0;">Dynamic extraction of playable stream URLs, metadata, and thumbnails from raw RTSP/M3U8 streams and website links via yt-dlp.</p>
+            <h3>[02] GO-NOGO Displays</h3>
+            <p class="project-desc" style="font-size: 0.875rem; margin-bottom: 0;">In-built system to display GO-NOGO stats, with adaquite colors for different status'.</p>
             </div>
             <div class="spec-card">
-            <h3>[03] Native Embedded Media Players</h3>
-            <p class="project-desc" style="font-size: 0.875rem; margin-bottom: 0;">Hardware-accelerated video rendering powered by libVLC alongside embedded WebView surfaces for native grid playback.</p>
+            <h3>[03] Major Concerns Display</h3>
+            <p class="project-desc" style="font-size: 0.875rem; margin-bottom: 0;">In-built system to display major concerns in a bullet-list format.</p>
             </div>
             <div class="spec-card">
-            <h3>[04] Visual Feed & Output Management</h3>
-            <p class="project-desc" style="font-size: 0.875rem; margin-bottom: 0;">Centralized dashboard to store, edit, group, and persist feeds and preset layout configurations in local storage.</p>
+            <h3>[04] Spreadsheet Integration</h3>
+            <p class="project-desc" style="font-size: 0.875rem; margin-bottom: 0;">Integration with spreadsheet using google sheets, or manual data entry.</p>
             </div>
             <div class="spec-card">
-            <h3>[05] Drag-and-Drop Output Builder</h3>
-            <p class="project-desc" style="font-size: 0.875rem; margin-bottom: 0;">Interactive workspace using visual ghost overlays to assign, swap, or reorder feeds across playback output slots.</p>
+            <h3>[05] Customization</h3>
+            <p class="project-desc" style="font-size: 0.875rem; margin-bottom: 0;">Color of various UI elements can be customized. There are current plans for more customization, but this is down the line.</p>
             </div>
             <div class="spec-card">
-            <h3>[06] Auto Connection Recovery</h3>
-            <p class="project-desc" style="font-size: 0.875rem; margin-bottom: 0;">Active playback monitoring with automatic stall and buffer detection and instant reconnection logic for dropped streams.</p>
-            </div>
-            <div class="spec-card">
-            <h3>[07] Async Loading & Progress</h3>
-            <p class="project-desc" style="font-size: 0.875rem; margin-bottom: 0;">Threaded stream extraction coupled with a non-blocking modal progress popup during multi-feed playback initialization.</p>
-            </div>
-            <div class="spec-card">
-            <h3>[08] Diagnostic Debug Logging</h3>
-            <p class="project-desc" style="font-size: 0.875rem; margin-bottom: 0;">Non-blocking, queue-backed debug logging system with custom timestamping enabled via environment variables.</p>
-            </div>
-            <div class="spec-card">
-            <h3>[09] Discord Credit Linking</h3>
-            <p class="project-desc" style="font-size: 0.875rem; margin-bottom: 0;">Link copying system that uses feed title and is formatted for easy use in a Discord environment.</p>
-            </div>
-            <div class="spec-card">
-            <h3>[10] WebP/GIF Extraction</h3>
-            <p class="project-desc" style="font-size: 0.875rem; margin-bottom: 0;">Extract a WebP, or a GIF, of the previous set of time (length of time can be customized) for any feed. Extracts to a set folder.</p>
+            <h3>[06] Much More!</h3>
+            <p class="project-desc" style="font-size: 0.875rem; margin-bottom: 0;">More features are planned, and will come out over time.</p>
             </div>
         </div>
         </div>
@@ -161,43 +114,12 @@
           
           <div class="code-block">
             # Clone repository<br>
-            git clone https://github.com/HSN3K/downlink.git<br>
+            git clone https://github.com/HamsterSpaceNerd3000/RocketLaunchCountdown<br>
             cd downlink<br><br>
             # Set up virtual environment and run<br>
             uv venv && source .venv/bin/activate<br>
             pip install -r requirements.txt<br>
             python main.py
-          </div>
-        </div>
-      </section>
-
-      <!-- Credits & Acknowledgments -->
-      <section class="project-section">
-        <div class="project-content">
-          <div class="project-header">
-            <h2 class="project-title">Credits & Acknowledgments</h2>
-            <span class="project-type">CONTRIBUTORS</span>
-          </div>
-          <p class="project-desc">Special thanks to those who contributed technical feedback, testing, and project support throughout development.</p>
-
-          <div class="credits-grid">
-            <!-- Contributor 1 -->
-            <div class="credit-card">
-              <div class="credit-header">
-                <span class="credit-name">BrightBites</span>
-                <span class="credit-role">Linux Work</span>
-              </div>
-              <p class="credit-desc">Everything involving Linux builds and compatibility, she did. Huge thanks!</p>
-            </div>
-
-            <!-- Contributor 2 -->
-            <div class="credit-card">
-              <div class="credit-header">
-                <span class="credit-name">Alpha Testing Group</span>
-                <span class="credit-role">Testing</span>
-              </div>
-              <p class="credit-desc">A group of my friends who agreed to do the early testing!</p>
-            </div>
           </div>
         </div>
       </section>
